@@ -1,0 +1,87 @@
+.footer {
+    background-color: #212121;
+}
+
+.footer__nav__cnt {
+    width: 90%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10vh 0;
+    font-family: "Arimo", sans-serif;
+    margin: 0 auto;
+    color: white;
+}
+
+.footer__line {
+    width: 100%;
+
+    &:first-of-type {
+        padding: 10vh 0;
+    }
+}
+
+.footer__slogan {
+    padding-top: 10vh;
+    opacity: 0.5;
+
+ span {
+        font-size: 2vw;
+        font-weight: 700;
+        letter-spacing: 0.1rem;;
+    }
+
+    strong {
+        display: block;
+        width: 100%;
+        font-size: 6vw;
+        text-transform: uppercase;
+        letter-spacing: 0.1rem;;
+        line-height: 0.75;
+    }
+}
+
+.footer__slogan__text {
+    letter-spacing: 0.5rem;
+    align-self: flex-end;
+    text-align: justify;
+}
+.footer__social {
+    img {
+        padding: 1rem;
+        border-radius: 50%;
+        border: 1px solid gray;
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+}
+
+.footer__nav {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+        a {
+        text-decoration: none;
+        color: white;
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+}
+
+.footer__cpy {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    color: gray;
+    padding: 3vh 0;
+}
+
+.footer__sign {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    color: gray;
+    padding: 3vh 0;
+    justify-self: flex-end;
+}
