@@ -1,0 +1,57 @@
+.staff {
+  display: flex;
+  justify-content: center;
+/*   background: #2f2f2f; */
+}
+
+.staff__cnt {
+  width: 90%;
+  margin-top: 5vh;
+}
+
+.staff__cnt p {
+  font-family: 'Arimo', sans-serif;
+  font-size: 14vh;
+  font-weight: bold;
+/*   color: gray; */
+  margin-bottom: 5vh;
+}
+
+
+.staff__head {
+  display: block;
+  font-family: 'Arimo', sans-serif;
+  font-size: 65vh;
+  margin-bottom: 1.5rem;
+}
+
+.box__cnt {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 25vh;
+}
+
+.box {
+  position : relative;
+  margin-bottom: 1vw;
+}
+
+ .box__img {
+   width: 44vw;
+   height: 44vw;
+   background: gray;
+   object-fit: cover;
+}
+
+.box__data {
+  position: absolute;
+  color: white;
+  top: 75%;
+  left: 5%;
+}
+
+.box__name {
+  font-size: 5vw;
+  margin-right: 1rem;
+}
