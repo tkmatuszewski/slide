@@ -1,0 +1,92 @@
+.offer {
+    background-color: #212121;
+
+    ul {
+        list-style-type: none;
+    }
+  
+    img{
+  display:block;
+  width:100%; 
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  opacity: 0.6;
+}
+}
+
+
+.offer__hero {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    height: 70vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Arimo', sans-serif;
+    font-size: 13vh;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+
+    ul {
+        list-style-type: none;
+    }
+}
+
+.offer__cnt {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.offer__info {
+    color: white;
+    min-height: 120vh;
+}
+
+.offer__list {
+    list-style-type: none;
+    font-size: 25vh;
+
+    li {
+        border-bottom: 1px solid gray;
+    }
+}
+
+
+.offer__slogan {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background: white;
+
+    // div {
+    //     width: 50%;
+    //     // height: 75vh;
+
+    // }
+
+    h2 {
+        margin-left: 50%;
+        margin-right: 5vw;
+        font-family: 'Arimo', sans-serif;
+        font-size: 2.5vw;
+        padding: 30vh 0;
+    }
+}
+
+.offer__programs__cnt {
+    background: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.offer__programs {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
