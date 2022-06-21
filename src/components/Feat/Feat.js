@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import Button from '../Button/Button';
 import { Link } from "gatsby";
 
-export const Feat = ({ feat }) => {
+const Feat = ({ feat }) => {
   return (
     <>
       <section className="feat__wrapper">
@@ -18,3 +19,5 @@ export const Feat = ({ feat }) => {
     </>
   );
 };
+
+export default Feat
