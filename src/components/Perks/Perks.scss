@@ -1,0 +1,36 @@
+.perks {
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 10vh 0;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.perks__cnt {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.perks__title {
+    display: block;
+    width: 100%;
+    font-family: "Arimo", sans-serif;
+    font-size: 2.5vw;
+}
+
+.perk__card {
+    width: 22%;
+    padding: 2rem 0; 
+    font-family: "Carme";
+    font-size: 1.2rem;
+
+    strong {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
