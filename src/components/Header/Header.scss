@@ -1,0 +1,47 @@
+@import "../../styles/mixins.scss";
+
+.header {
+    // position: fixed;
+    // top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    color: gray;
+    background-color: #212121;
+}
+
+.nav__cnt {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    a {
+        @include link;
+        color: white;
+        font-family: "Carme", sans-serif;
+        font-weight: bold;
+        
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+#log {
+    font-family: "Arimo",sans-serif;
+    font-weight: 700;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+    color: white;
+    cursor: pointer;
+}
+
