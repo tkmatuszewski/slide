@@ -1,23 +1,25 @@
 import React from 'react';
 import Hero from '../../components/Hero/Hero';
 import Feat from '../Feat/Feat';
-import {sectionsContent} from '../../constants/mainContent'
-
-
+import { hi, offer, about, team, contact } from '../../constants/mainContent'
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Main =()=> {
   return (
     <>
-        <Hero />
-        {sectionsContent.map(el => {
-            return (
-                <Feat feat={el} key={el.name}>
-                    <img />
-                </Feat>
-              )
-          }
-        )
-    }
+      <Hero />
+      <Feat feat={hi}>
+        {/* <StaticImage src={"../../images/intermediate.jpg"} alt=""/> */}
+        {/* <StaticImage src={"../../images/team.jpg"} alt="" /> */}
+      </Feat>
+      <Feat feat={offer}>
+        <StaticImage src={"../../images/2men.jpg"} alt="" />
+      </Feat>
+      <Feat feat={about}>
+        <StaticImage src={"../../images/begginer.jpg"} alt=""/>
+      </Feat>
+      <Feat feat={team} />
+      <Feat feat={contact} />
     </>
   );
 }
