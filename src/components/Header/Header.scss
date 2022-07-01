@@ -1,8 +1,6 @@
 @import "../../styles/mixins.scss";
 
 .header {
-    // position: fixed;
-    // top: 0;
     left: 0;
     width: 100%;
     border-bottom: 1px solid gray;
@@ -11,7 +9,7 @@
 }
 
 .nav__cnt {
-    width: 90%;
+    width: 80%;
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
@@ -28,10 +26,11 @@
         @include link;
         color: white;
         font-family: "Carme", sans-serif;
+        font-size: 1.5rem;
         font-weight: bold;
         
         &:hover {
-            color: white;
+            color: #a4f12ee8;
         }
     }
 }
