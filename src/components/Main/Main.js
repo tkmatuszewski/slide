@@ -8,18 +8,19 @@ const Main =()=> {
   return (
     <>
       <Hero />
-      <Feat feat={hi}>
-        {/* <StaticImage src={"../../images/intermediate.jpg"} alt=""/> */}
-        {/* <StaticImage src={"../../images/team.jpg"} alt="" /> */}
-      </Feat>
+      <Feat feat={hi}></Feat>
       <Feat feat={offer}>
-        <StaticImage src={"../../images/2men.jpg"} alt="" />
+        <StaticImage src={"../../images/2men.jpg"} alt="Two man smiling on the sufboards" />
       </Feat>
       <Feat feat={about}>
-        <StaticImage src={"../../images/begginer.jpg"} alt=""/>
+        <StaticImage src={"../../images/begginer.jpg"} alt="Girl surfing" />
       </Feat>
       <Feat feat={team} />
-      <Feat feat={contact} />
+      <Feat feat={contact}>
+        <div className="circle__wrapper">
+          <div className="circle" />
+        </div>
+      </Feat>
     </>
   );
 }
