@@ -26,11 +26,15 @@
 .perk__card {
     width: 22%;
     padding: 2rem 0; 
-    font-family: "Carme";
-    font-size: 1.2rem;
 
     strong {
+        @include text;
         display: block;
         margin-bottom: 0.5rem;
+    }
+
+    p {
+        @include textSmall;
+        opacity: 0.7;
     }
 }
