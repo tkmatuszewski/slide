@@ -1,18 +1,7 @@
 .offer {
-    background-color: #212121;
-
     ul {
         list-style-type: none;
     }
-  
-    img{
-  display:block;
-  width:100%; 
-  height: auto;
-  object-fit: cover;
-  position: relative;
-  opacity: 0.6;
-}
 }
 
 
@@ -35,9 +24,8 @@
     }
 }
 
-.offer__cnt {
-    width: 90%;
-    margin: 0 auto;
+.offer__wrapper {
+    background-color: #212121;
 }
 
 .offer__info {
@@ -56,37 +44,61 @@
 
 
 .offer__slogan {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    background: white;
-
-    // div {
-    //     width: 50%;
-    //     // height: 75vh;
-
-    // }
+    width: 80%;
+    padding: 20vh 0;
+    margin: 0 auto;
 
     h2 {
-        margin-left: 50%;
-        margin-right: 5vw;
         font-family: 'Arimo', sans-serif;
         font-size: 2.5vw;
-        padding: 30vh 0;
+        padding: 1rem 0;
+    }
+
+    p {
+        @include textSmall;
+        width: 50%;
     }
 }
 
 .offer__programs__cnt {
-    background: white;
-    height: 100vh;
-    display: flex;
-    align-items: center;
+    width: 80%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color:  #212121;
+    color: white;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 25vh;
+    overflow: hidden;
 }
 
-.offer__programs {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
+.offer__level {
+    font-family: 'Arimo', sans-serif;
+    font-size: 2.5vw;
+    padding: 3vw;
+
+    strong {
+        margin-bottom: 4rem;
+    }
+
+    button {
+        width: 100%;
+        @include text;
+        text-align: left;
+        background-color: transparent;
+        color: gray;
+        border: none;
+        cursor: pointer;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid gray;
+    };
+}
+
+.offer__right {
+    position: relative;
+
+    picture {
+        opacity: 0.7;
+    }
 }
