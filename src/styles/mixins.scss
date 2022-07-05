@@ -3,3 +3,18 @@
     cursor: pointer;
     transition: 0.5s;
 }
+
+@mixin header {
+    font-family: 'Arimo', sans-serif;
+    font-size: 4vw;
+}
+
+@mixin text {
+    font-family: 'Carme', sans-serif;
+    font-size: 1.5vw;
+}
+
+@mixin textSmall {
+    font-family: 'Carme', sans-serif;
+    font-size: 1vw;
+}
