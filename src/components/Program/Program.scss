@@ -1,32 +1,27 @@
 .program {
-    text-decoration: none;
-    color: black;
+    height: 100%;
+    width: 100%;
 }
 
 .program__card {
-    margin-bottom: 25vh;
+    @include textSmall;
+    width: 90%;
+    position: absolute;
+    top: 3vw;
+    left: 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     
-    .program__photo {
-        width: 28.5vw;
-        height: 60vh;
-        background: black;
-        margin-bottom: 5vh 0;
-    } 
-
-    h3 {
-        padding: 1.5rem 0 0.5rem 0;
-        font-size: 2.5rem;
-    }
-
-    p, h3 {
+    strong {
+        @include text;
         display: block;
         width: 100%;
-        font-size: 1.5rem;
-        font-family: 'Arimo', sans-serif;
+        margin-bottom: 0.5rem;
     }
+}
 
-    p {
-        font-family: "Carme";
-        font-size: 1.2rem;
+.program__card__scn {
+    li {
+        line-height: 1.2;
     }
 }

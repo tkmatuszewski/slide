@@ -3,7 +3,6 @@ export const hi = {
   desc: "A whole lot of water surrounds you, and gust of wind hits your face as the wave breaks right behind your back. Adrenaline starts to flow along with the wide smile on your face. You're picking up speed and sliding down the wave. There is no mistake. It's surfing baby!",
   class: "feat wide",
   img__center: true
-  // img: "../../images/intermediate.jpg"
 }
 
 export const about = {
