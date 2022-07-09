@@ -11,10 +11,10 @@
 
 @mixin text {
     font-family: 'Carme', sans-serif;
-    font-size: 1.5vw;
+    font-size: clamp(1.2rem, 1.5vw, 2vw);
 }
 
 @mixin textSmall {
     font-family: 'Carme', sans-serif;
-    font-size: 1vw;
+    font-size: clamp(1rem, 1vw, 1.5rem);
 }
