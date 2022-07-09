@@ -7,20 +7,25 @@ import { StaticImage } from 'gatsby-plugin-image';
 const Main =()=> {
   return (
     <>
-      <Hero />
-      <Feat feat={hi}></Feat>
-      <Feat feat={offer}>
-        <StaticImage src={"../../images/2men.jpg"} alt="Two man smiling on the sufboards" />
-      </Feat>
-      <Feat feat={about}>
-        <StaticImage src={"../../images/begginer.jpg"} alt="Girl surfing" />
-      </Feat>
-      <Feat feat={team} />
-      <Feat feat={contact}>
-        <div className="circle__wrapper">
-          <div className="circle" />
-        </div>
-      </Feat>
+      <div className="main__cnt">
+        <Hero />
+        <Feat feat={hi}></Feat>
+        <Feat feat={offer}>
+          <StaticImage
+            src={"../../images/2men.jpg"}
+            alt="Two man smiling on the sufboards"
+          />
+        </Feat>
+        <Feat feat={about}>
+          <StaticImage src={"../../images/begginer.jpg"} alt="Girl surfing" />
+        </Feat>
+        <Feat feat={team} />
+        <Feat feat={contact}>
+          <div className="circle__wrapper">
+            <div className="circle" />
+          </div>
+        </Feat>
+      </div>
     </>
   );
 }
