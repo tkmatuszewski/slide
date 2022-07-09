@@ -102,10 +102,12 @@ justify-content: center;
     justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
-    margin-top: 10vh;
+    padding: 15vh 0;
 
     @media only screen and (max-width: 600px) {
     width: 100%;
+    margin-top: 0;
+    text-align: left;
 }
 }
 
@@ -116,8 +118,8 @@ justify-content: center;
     justify-content: flex-end;
 }
 .circle {
-    width: 40vh;
-    height: 40vh;
+    width: 30vw;
+    height: 30vw;
     background-color: black;
     border-radius: 50%;
 }
