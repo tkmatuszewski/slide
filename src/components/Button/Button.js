@@ -1,6 +1,6 @@
-import React from 'react'
+import * as React from "react";
 
-const Button =({name, className})=> {
+const Button =(name, className)=> {
     return (
         <button className={className}>
             {name}
