@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Button({name, className}) {
+const Button =({name, className})=> {
     return (
         <button className={className}>
             {name}
         </button>
     )
 };
+
+export default Button;
