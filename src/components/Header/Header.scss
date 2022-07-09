@@ -1,11 +1,12 @@
 @import "../../styles/mixins.scss";
 
 .header {
-    left: 0;
     width: 100%;
-    border-bottom: 1px solid gray;
     color: gray;
     background-color: #212121;
+    position: fixed;
+    z-index: 10;
+    box-shadow: 4px 6px 20px #00000075;
 }
 
 .nav__cnt {
@@ -13,6 +14,18 @@
     display: flex;
     justify-content: space-evenly;
     margin: 0 auto;
+    z-index: 10;
+}
+ @media only screen and (max-width: 600px) {
+   .nav__cnt {
+       display: none;
+       position: fixed;
+       width: 100vw;
+       height: 100vh;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+  }
 }
 
 .nav {
@@ -26,21 +39,64 @@
         @include link;
         color: white;
         font-family: "Carme", sans-serif;
-        font-size: 1.5rem;
+        font-size: clamp(1rem, 1.2vw, 2rem);
         font-weight: bold;
         
         &:hover {
             color: #a4f12ee8;
         }
     }
+
+    .home {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+   .nav {
+       height: 100%;
+       display: grid;
+       grid-template-rows: repeat(5,auto);
+       justify-content: center;
+       background-color: #212121;
+       opacity: 0;
+
+  a {
+      font-size: 7vw;
+      text-align: center;
+  }
+
+  .home {
+      display: block;
+  }
+}
 }
 
 #log {
     font-family: "Arimo",sans-serif;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
     text-transform: capitalize;
     color: white;
     cursor: pointer;
+
+    @media only screen and (max-width: 600px) {
+        display: none;
+    }
 }
 
+.nav__btn {
+    width: 100%;
+    height: 15vh;
+    line-height: 15vh;
+    background: black;
+    border-bottom: 1px solid gray;
+    color: white;
+    font-size: clamp(1.5rem, 1.2vw, 5rem);
+    font-family: 'Arimo', sans-serif;
+
+}
+   @media only screen and (min-width: 600px) {
+    .nav__btn {
+        display: none;
+    }
+}
