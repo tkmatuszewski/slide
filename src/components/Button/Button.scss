@@ -12,6 +12,11 @@
   color: black;
   transition: 0.3s;
   margin-top: 3vh;
+
+  @media only screen and (max-width: 600px) {
+    margin: 5vh 0;
+}
+
 }
 
 
