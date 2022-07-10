@@ -1,23 +1,24 @@
 import React from 'react';
 import Button from '../Button/Button';
 import { Link } from "gatsby";
+import './Feat.scss';
 
 const Feat = ({ feat, children }) => {
   
+  const { name, desc, link, btn } = feat;
+
   return (
     <>
       <section className="feat__wrapper">
         {children}
-        <div className="feat__cnt">
-          <div className={feat.class}>
-            <strong>{feat.name}</strong>
-            <p>{feat.desc}</p>
-            {feat.link ? (
-              <Link to={feat.link}>
-                <Button name={feat.btn} className={"button"} />
+        <div className={children? "feat" : "feat wide"}>
+            <strong>{name}</strong>
+            <p>{desc}</p>
+            {link ? (
+              <Link to={link}>
+                <Button name={btn} cl={"button"} />
               </Link>
             ) : null}
-          </div>
         </div>
       </section>
     </>
