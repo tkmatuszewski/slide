@@ -1,5 +1,6 @@
 import React from 'react';
 import { perks } from "../../constants/perks";
+import './Perks.scss';
 
 export default function OfferPerks() {
   return (
