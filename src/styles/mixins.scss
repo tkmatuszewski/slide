@@ -6,7 +6,7 @@
 
 @mixin header {
     font-family: 'Arimo', sans-serif;
-    font-size: 4vw;
+    font-size: clamp(2rem, 4vw, 5rem);
 }
 
 @mixin text {
@@ -17,4 +17,5 @@
 @mixin textSmall {
     font-family: 'Carme', sans-serif;
     font-size: clamp(1rem, 1vw, 1.5rem);
+    line-height: 1.5;
 }
