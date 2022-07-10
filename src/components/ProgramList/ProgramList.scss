@@ -1,4 +1,11 @@
+@import "../../styles/mixins.scss";
+
+$textMargin: 5vh;
+
 .offer {
+    @media only screen and (max-width: 768px) {
+    margin-top: 10vh;
+  }
     ul {
         list-style-type: none;
     }
@@ -9,13 +16,11 @@
     position: absolute;
     top: 15%;
     left: 5%;
-    height: 70vh;
-    width: 90%;
     margin: 0 auto;
     display: flex;
     text-transform: uppercase;
     font-family: 'Arimo', sans-serif;
-    font-size: 13vh;
+    font-size: 9vw;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.7);
 
@@ -44,19 +49,38 @@
 
 
 .offer__slogan {
-    width: 80%;
-    padding: 20vh 0;
+    width: 60%;
+    padding: 40vh 0;
     margin: 0 auto;
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    @media only screen and (max-width: 768px) {
+    display: block;
+    width: 80%;
+    padding: 30vh 0;
+  }
+      @media only screen and (max-width: 425px) {
+    width: 90%;
+  }
+    
     h2 {
-        font-family: 'Arimo', sans-serif;
-        font-size: 2.5vw;
-        padding: 1rem 0;
+        @include header;
+        width: 30%;
+    
+        @media only screen and (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 1.5rem;
+        }
     }
-
     p {
-        @include textSmall;
-        width: 50%;
+        width: 55%;
+        @include text;
+        line-height: 1.5;
+         @media only screen and (max-width: 768px) {
+        width: 100%;
+        }
     }
 }
 
@@ -64,22 +88,61 @@
     width: 80%;
     height: 70vh;
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 30% 70%;
     background-color:  #212121;
     color: white;
     border-radius: 20px;
     margin: 0 auto;
-    margin-bottom: 25vh;
+    margin-bottom: 15vh;
     overflow: hidden;
+    @media only screen and (max-width: 768px) {
+    width: 95%;
+  }
+    @media only screen and (max-width: 425px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
 }
 
+.offer__left {
+    display: flex;
+    align-items: center;
+}
+
+.offer__slct {
+    display: none;
+
+    @media only screen and (max-width: 768px) {
+    display: block;
+    width: 100%;
+    @include text;
+    padding: 1rem;
+
+    select {
+        width: 100%;
+        @include textSmall;
+        background-color: transparent;
+        color: gray;
+        
+        option {
+            @include textSmall;
+        }
+    }
+  }
+}
+
+
 .offer__level {
-    font-family: 'Arimo', sans-serif;
-    font-size: 2.5vw;
+    @include text;
     padding: 3vw;
+    
+    @media only screen and (max-width: 768px) {
+    display: none;
+  }
 
     strong {
-        margin-bottom: 4rem;
+        display: block;
+        margin-bottom: 1.5rem;
     }
 
     button {
@@ -90,15 +153,7 @@
         color: gray;
         border: none;
         cursor: pointer;
-        padding-bottom: .5rem;
+        padding: 1rem;
         border-bottom: 1px solid gray;
     };
-}
-
-.offer__right {
-    position: relative;
-
-    picture {
-        opacity: 0.7;
-    }
 }
