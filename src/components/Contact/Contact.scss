@@ -1,40 +1,72 @@
+@import "../../styles/mixins.scss";
+
+$margin : 5vh;
+
 .contact__bg {
   background: #34363e;
   min-height: 93vh;
+  margin-top: 9vh;
 }
 
 .contact__cnt {
   width: 90%;
   margin: 0 auto;
-  display: flex;
-  padding: 10vh 0;
+  padding: 10vh 0;  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 29% 35% 15%;
+  column-gap: $margin;
+  @media only screen and (max-width: 1024px) {
+    grid-template-columns: 1fr 2fr;
+  }
+    @media only screen and (max-width: 768px) {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5,auto);
+  }
 }
 
-.contact__col {
-width: 50%;
-color: white;
-font-family: 'Arimo', sans-serif;
+.contact__cnt {
+   color: white;
 
  h1 {
-   width: 65%;
    font-weight: normal;
-   font-size: 15vmin;
+   font-size: 8vw;
    border-bottom: 1px solid gray;
+   padding-bottom: .5rem;
+   line-height: 1;
+    @media only screen and (max-width: 768px) {
+   grid-row: 1/2;
+  }
  }
 
 p {
-  width: 65%;
-  font-size: 1.5rem;
-  padding: 10vh 0 5vh 0;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  @include textSmall;
+  align-self: center;
+  color: gray;
+  @media only screen and (max-width: 768px) {
+    grid-row: 2/3;
+  }
 }
+
+.contact__list {
+  @include textSmall;
+  grid-row: 3/4;
+  grid-column: 1/2;
+  align-self: flex-end;
+  @media only screen and (max-width: 768px) {
+    grid-row: 4/5;
+  }
 
 ul {
   display: flex;
   list-style-type: none;
+  padding-top: 0.5rem;
 }
 
 li {
-  font-size: 1vw;
+  @include textSmall;
   color: gray;
   cursor: pointer;
   margin-right: 1rem;
@@ -46,13 +78,20 @@ li:hover {
   border-bottom: 1px solid white;
 }
 }
+}
 
 .contact__form {
     font-family: 'Arimo', sans-serif;
-    width: 50%;
-
+    grid-column: 2/3;
+    grid-row: 1/4;
+    @media only screen and (max-width: 768px) {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    padding: $margin 0;
+  }
 
     label {
+    @include textSmall;
     position: relative;
     padding: 1rem;
     border-radius: 10px;
@@ -61,7 +100,6 @@ li:hover {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
     opacity: 0.5;
     transition: 0.3s;
     color: #34363e;
@@ -81,14 +119,17 @@ li:hover {
     }
 
     label:hover {
-    opacity: 1;
+      opacity: 1;
+    }
+
+    .compl {
+      opacity: 1;
     }
 
     button {
   padding : 1rem 5rem;
   border: 1px solid gray;
-  margin-top: 5vh;
-  font-size: 1.2rem;
+  margin-top: $margin;
   color: gray;
   float: right;
 }
@@ -101,7 +142,6 @@ li:hover {
 .button:hover {
   color: white;
 }
-
 }
 
 .contact__col:first-of-type {
