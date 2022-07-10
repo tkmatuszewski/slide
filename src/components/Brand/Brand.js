@@ -1,18 +1,21 @@
 import React from 'react';
 import { Link } from "gatsby";
 import { StaticImage } from 'gatsby-plugin-image';
+import "../Brand/Brand.scss";
 
 const Brand = () => {
     return (
       <section className="brand">
-        <StaticImage
-          src="../../images/brand__hero.jpg"
-          alt="Surfer jumping on big wave"
-        />
-        <span className="brand__slogan">
-          Since the very beggining of our journey we are on the quest for
-          improvement and spreading our love for the ocean.
-        </span>
+        <div className='brand__img__cnt'>
+          <StaticImage
+            src="../../images/brand__hero.jpg"
+            alt="Surfer jumping on big wave"
+          />
+          <span className="brand__slogan">
+            Since the very beggining of our journey we are on the quest for
+            improvement and spreading our love for the ocean.
+          </span>
+        </div>
         <div className="brand__cnt">
           <div className="brand__box" id="idea">
             <strong className="brand__strong">The idea.</strong>
@@ -32,7 +35,7 @@ const Brand = () => {
               into the surf lifestyle.
             </p>
           </div>
-          <div className="brand__head">We are mad about waves</div>
+          <div className="brand__head">We are simply mad about waves</div>
           <div className="brand__box" id="mission">
             <strong className="brand__strong">Our Mission.</strong>
             <p className="brand__p">
@@ -43,7 +46,11 @@ const Brand = () => {
               pro level.
             </p>
           </div>
-          <StaticImage src="../../images/begginer.jpg" alt="" className='brand__img'/>
+          <StaticImage
+            src="../../images/begginer.jpg"
+            alt=""
+            className="brand__img"
+          />
           <div className="brand__box" id="team">
             <strong className="brand__strong">Team.</strong>
             <p className="brand__p">
