@@ -1,4 +1,5 @@
 import React from 'react';
+import './Program.scss';
 
 export function Program({ id }) {
   return (
