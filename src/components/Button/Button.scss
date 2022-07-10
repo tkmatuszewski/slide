@@ -1,6 +1,8 @@
+@import "../../styles/mixins.scss";
+
 .button {
   padding : 1rem 2rem;
-  font-size: 1.1rem;
+  @include textSmall;
   border-radius: 30px;
   border: 1px solid black;
   outline: none;
@@ -11,11 +13,10 @@
   z-index: 0;
   color: black;
   transition: 0.3s;
-  margin-top: 3vh;
 
-  @media only screen and (max-width: 600px) {
-    margin: 5vh 0;
-}
+//   @media only screen and (max-width: 768px) {
+//     margin: 5vh 0;
+// }
 
 }
 
