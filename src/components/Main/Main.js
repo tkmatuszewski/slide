@@ -3,6 +3,7 @@ import Hero from '../../components/Hero/Hero';
 import Feat from '../Feat/Feat';
 import { hi, offer, about, team, contact } from '../../constants/mainContent'
 import { StaticImage } from 'gatsby-plugin-image';
+import './Main.scss';
 
 const Main =()=> {
   return (
