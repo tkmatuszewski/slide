@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from "gatsby";
+import './Header.scss';
 
 export default function Header() {
 
@@ -12,12 +13,14 @@ export default function Header() {
 
   return (
     <div className="header">
-      {/* <div className="nav__cnt">
-        <button className="nav__btn" onClick={(e) => handleClick(e)}>
-          Menu
-        </button>
-        <nav className="nav">
-          <Link to="/" className='home'>Home</Link>
+      <button className="nav__btn" onClick={(e) => handleClick(e)}>
+        Menu
+      </button>
+      <div className={showMenu ? "nav__cnt" : "nav__cnt hide"}>
+        <nav className={showMenu ? "nav" : "nav hide"}>
+          <Link to="/" className="home">
+            Home
+          </Link>
           <Link to="/about">About</Link>
           <Link to="/offer">Offer</Link>
           <Link to="/" id="log">
@@ -26,7 +29,7 @@ export default function Header() {
           <Link to="/team">Team</Link>
           <Link to="/contact">Contact</Link>
         </nav>
-      </div> */}
+      </div>
     </div>
   );
 }
