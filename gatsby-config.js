@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `surfins`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `slide`
   },
   plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-react-helmet", {
     resolve: 'gatsby-plugin-manifest',
