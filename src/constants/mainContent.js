@@ -1,5 +1,5 @@
 export const hi = {
-  name: `Intro. Get to know the feeling`,
+  name: `Intro. Feel the adrenaline rush.`,
   desc: "A whole lot of water surrounds you, and gust of wind hits your face as the wave breaks right behind your back. Adrenaline starts to flow along with the wide smile on your face. You're picking up speed and sliding down the wave. There is no mistake. It's surfing baby!",
   img__center: true
 }
