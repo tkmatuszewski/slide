@@ -1,6 +1,7 @@
 import { MainImage } from 'gatsby-plugin-image';
 import React from 'react';
 import { team } from '../../constants/team';
+import './Staff.scss';
 
 export default function Staff() {
   return (
