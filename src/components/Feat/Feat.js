@@ -16,7 +16,7 @@ const Feat = ({ feat, children }) => {
             <p>{desc}</p>
             {link ? (
               <Link to={link}>
-                <Button name={btn} cl={"button"} />
+                <Button name={btn} cl={"btn"} />
               </Link>
             ) : null}
         </div>
