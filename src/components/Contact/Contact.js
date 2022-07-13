@@ -83,7 +83,7 @@ export default function ContactForm() {
                   placeholder="How can we help you..."
                 />
               </label>
-              <Button name="Send" cl={"button"} />
+              <Button name="Send" cl={"btn"} />
             </form>
           )}
         </div>

@@ -47,6 +47,7 @@ p {
   color: gray;
   @media only screen and (max-width: 768px) {
     grid-row: 2/3;
+    padding-top: $margin;
   }
 }
 
@@ -132,6 +133,9 @@ li:hover {
   margin-top: $margin;
   color: gray;
   float: right;
+  @media only screen and (max-width: 425px) {
+  padding: 0.5rem 3rem; 
+}
 }
 
 .button:after {
