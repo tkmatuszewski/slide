@@ -35,7 +35,6 @@
   margin: 0 auto 20vh auto;
   @media only screen and (max-width: 425px) {
   grid-template-columns: 100%; 
-  height: 50vh;
 }
 }
 
@@ -46,6 +45,9 @@
   width: 100%;
   height: 33vw;
   overflow: hidden;
+  @media only screen and (max-width: 425px) {
+  height: 50vh;
+}
 
   &:hover {
     .box__det {
@@ -95,9 +97,7 @@
   z-index: 1;
   transform: translateY(110%);
   transition: 0.7s;
-}
-
-.staff__bbq {
-  width: 60%;
-  height: 50vh;
+   @media only screen and (max-width: 425px) {
+     overflow-y: scroll;
+  }
 }
