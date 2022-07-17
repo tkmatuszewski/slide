@@ -1,0 +1,20 @@
+.circle {
+  width: 30vw;
+  height: 30vw;
+  background-color: black;
+  border-radius: 50%;
+  align-self: center;
+  margin: 0 auto;
+  transition: .5s;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: sunset 6s ease-in-out alternate infinite;
+  z-index: 0;
+}
+
+@keyframes sunset {
+    0% {background-color: rgba(255, 200, 0, 0.3); transform: translate(-50vw, -50%)} 
+    100% {background-color: rgba(255, 80, 0,0.3); transform: translate(20vw, -50%)}  
+}
