@@ -1,0 +1,26 @@
+@import '../../styles/mixins.scss';
+
+.credits {
+    margin-top: 15vh;
+    min-height: 90vh;
+
+    .group {
+        margin-bottom: 1.5rem;
+    }
+
+    strong {
+        display: block;
+        @include header;
+        margin-bottom: 0.5rem;
+    }
+
+    span {
+        display: block;
+        @include text;
+    }
+}
+
+.credits__cnt {
+    width: 90%;
+    margin: 0 auto;
+}

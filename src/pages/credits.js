@@ -1,8 +1,8 @@
 import React from 'react';
 import Layout from '../components/Layout/Layout'
-import Contiburion from '../components/Contribution/contribution';
+import Contiburion from '../components/Contribution/Contribution';
 
-export default function Credits() {
+const Credits =()=> {
   return (
     <>
       <Layout>
@@ -11,3 +11,5 @@ export default function Credits() {
     </>
   );
 }
+
+export default Credits;
