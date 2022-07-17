@@ -33,18 +33,17 @@ $menuBtnH : 10vh;
 }
 
 .nav {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3vh;
+    margin: 0 auto;
 
     a {
         @include link;
         @include textSmall;
         color: white;
-        // font-family: "Carme", sans-serif;
-        // font-size: clamp(1rem, 1.2vw, 2rem);
         font-weight: bold;
         
         &:hover {
