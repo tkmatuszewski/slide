@@ -1,9 +1,9 @@
 import React from 'react';
 import Hero from '../../components/Hero/Hero';
 import Feat from '../Feat/Feat';
+import Circle from '../Circle/Circle';
 import { hi, offer, about, team, contact } from '../../constants/mainContent'
 import { StaticImage } from 'gatsby-plugin-image';
-import './Main.scss';
 
 const Main =()=> {
   return (
@@ -14,7 +14,7 @@ const Main =()=> {
         <Feat feat={offer}>
           <StaticImage
             src={"../../images/2men.jpg"}
-            alt="Two man smiling on the sufboards"
+            alt="Two man smiling on the surfboards"
           />
         </Feat>
         <Feat feat={about}>
@@ -22,9 +22,7 @@ const Main =()=> {
         </Feat>
         <Feat feat={team} />
         <Feat feat={contact}>
-          <div className="circle__wrapper">
-            <div className="circle" />
-          </div>
+          <Circle/>
         </Feat>
       </div>
     </>
