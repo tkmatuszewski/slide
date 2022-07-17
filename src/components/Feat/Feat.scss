@@ -1,76 +1,64 @@
 @import "../../styles/mixins.scss";
 
-$margin__feat : 3vh;
+$margin__feat: 3vh;
 $scn__padding: 10vh;
 
 .feat__wrapper {
-min-height: 80vh;
-display: grid;
-grid-template-columns: repeat(2,1fr);
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 
-&:nth-of-type(odd) {
+  &:nth-of-type(odd) {
     background-color: black;
     color: white;
-    }
-&:nth-of-type(odd) {
-        .btn {
-            border: 1px solid gray;
-            color: gray;
-        
-        &:hover {
-            color: black;
-        }
-        &:after{
-            background: white;
-        }
-        }
-    }
+  }
+  &:nth-of-type(odd) {
+    .btn {
+      border: 1px solid gray;
+      color: gray;
 
-   @media only screen and (max-width: 768px) {
-       grid-template-columns: 1fr;
+      &:hover {
+        color: black;
+      }
+      &:after {
+        background: white;
+      }
     }
+  }
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .wide {
-    grid-column: 1/3;
-    justify-self: center;
-    align-self: center;
-    width: 75%;
+  grid-column: 1/3;
+  justify-self: center;
+  align-self: center;
+  width: 75%;
 }
 
 .feat {
-    width: 90%;
-    align-self: center;
-    padding: $margin__feat;
-    margin: 0 auto;
+  width: 90%;
+  align-self: center;
+  padding: $margin__feat;
+  margin: 0 auto;
 
-    strong {
-        @include header;
-        display: block;
-        margin-bottom: $margin__feat;
-    }
-    
-    p {
-        @include textSmall;
-        margin-bottom: $margin__feat;
-    }
+  strong {
+    @include header;
+    display: block;
+    margin-bottom: $margin__feat;
+  }
 
-   @media only screen and (max-width: 768px) {
-       padding: $scn__padding 0;
-    }
-}
+  p {
+    @include textSmall;
+    margin-bottom: $margin__feat;
+  }
 
-.circle__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.circle {
-    width: 25vw;
-    height: 25vw;
-    background-color: black;
-    border-radius: 50%;
-    align-self: center;
-    margin: 0 auto;
+  @media only screen and (max-width: 768px) {
+    padding: $scn__padding 0;
+  }
 }
