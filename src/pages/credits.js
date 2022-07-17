@@ -1,14 +1,13 @@
 import React from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
-import Contiburion from '../components/Credits/Credits';
+import Layout from '../components/Layout/Layout'
+import Contiburion from '../components/Contribution/contribution';
 
 export default function Credits() {
   return (
     <>
-      <Header />
-      <Contiburion/>
-      <Footer />
+      <Layout>
+        <Contiburion/>
+      </Layout>
     </>
   );
 }

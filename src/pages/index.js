@@ -1,16 +1,14 @@
 import * as React from "react";
-// import "../../styles.scss";
-import Header from '../components/Header/Header';
+import Layout from "../components/Layout/Layout";
 import Main from '../components/Main/Main';
-import Footer from "../components/Footer/Footer";
 
 const IndexPage = () => {
   return (
-    <main>
-      <Header />
-      <Main/>
-      <Footer/>
-    </main>
+    <>
+      <Layout>
+        <Main/>
+      </Layout>
+    </>
   )
 }
 

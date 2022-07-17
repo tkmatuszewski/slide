@@ -1,14 +1,13 @@
 import React from 'react';
-import Header from '../components/Header/Header';
-import Footer from '../components/Footer/Footer';
+import Layout from '../components/Layout/Layout';
 import ProgramList from '../components/ProgramList/ProgramList';
 
 const offer = () => {
     return (
         <>
-            <Header />
-            <ProgramList />
-            <Footer/>
+            <Layout>
+                <ProgramList/>
+            </Layout>
         </>
     )
 }

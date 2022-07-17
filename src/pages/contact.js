@@ -1,14 +1,13 @@
 import React from "react";
-import Header from "../components/Header/Header";
+import Layout from "../components/Layout/Layout";
 import ContactForm from "../components/Contact/Contact";
-import Footer from "../components/Footer/Footer";
 
 const Contact =()=> {
   return (
     <>
-      <Header />
-      <ContactForm/>
-      <Footer />
+      <Layout>
+        <ContactForm/>
+      </Layout>
     </>
   );
 }

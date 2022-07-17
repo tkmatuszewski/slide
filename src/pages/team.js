@@ -1,14 +1,13 @@
 import React from "react";
-import Header from "../components/Header/Header";
-import Footer from "../components/Footer/Footer";
+import Layout from "../components/Layout/Layout";
 import Staff from "../components/Staff/Staff";
 
 const team = () => {
     return (
         <>
-            <Header/>
+            <Layout>
                 <Staff/>
-            <Footer/>
+            </Layout>
         </>
     )
 }
