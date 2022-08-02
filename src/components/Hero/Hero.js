@@ -13,10 +13,11 @@ export default function Hero() {
               className="hero__vid"
               src={hero__vid}
               type="video/mp4"
-              autoPlay={true}
               preload="auto"
-              loop={true}
-              muted={true}
+              autoPlay
+              loop
+              muted
+              playsInline
             />
           </div>
         </div>
